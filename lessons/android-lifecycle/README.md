@@ -131,7 +131,7 @@ Understanding the activity lifecycle is important to writing code that makes you
 
 ## Logging to the console
 
-Instead of `System.out.print()` The Android SDK provides a special call for logging: [`Log`](https://developer.android.com/reference/android/util/Log.html). It provide several filterable levels of logging. While debugging during the course of app development you can use the DEBUG level, which is invoked as follows:
+Instead of `System.out.print()`, the Android SDK provides a special call for logging: [`Log`](https://developer.android.com/reference/android/util/Log.html). It provides several filterable levels of logging. While debugging during the course of app development you can use the DEBUG level, which is invoked as follows:
 
 ```java
 Log.d("MainActivity", "myVariable = " + myVariable);
@@ -151,9 +151,9 @@ Log.d(TAG, "myVariable = " + myVariable);
 
 ## Saving state through an orientation change
 
-When an activity goes into the background, the system may destroy it if resources like memory become low. When this happens, any information about the state of the activity is stored in a [`Bundle`](http://developer.android.com/reference/android/os/Bundle.html) so that it can be used to restore the activity. 
+When an activity goes into the background, the system may destroy it if resources, like memory, become low. When this happens, any information about the state of the activity is stored in a [`Bundle`](http://developer.android.com/reference/android/os/Bundle.html) so that it can be used to restore the activity. 
 
-Some information about the View hierarchy will be saved automatically by `onSaveInstanceState()`. However, you can override this method in order to save more information about the current activity state to the `Bundle` using key-value pairs. 
+Some information about the view hierarchy will be saved automatically by `onSaveInstanceState()`. However, you can override this method in order to save more information about the current activity state to the `Bundle` using key-value pairs. 
 
 ```java
     private static final String KEY_MY_STRING = "MY_STRING";
